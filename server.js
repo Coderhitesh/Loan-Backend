@@ -9,7 +9,7 @@ app.use(express.json())
 app.use(express.urlencoded({extended:true}))
 app.use(cors());
 ConnectDB()
-const PORT = process.env.PORT
+const PORT = process.env.PORT || 9111
 app.listen(PORT , ()=>{
     console.log(`Server is running on port ${PORT}`)
 })
