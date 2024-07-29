@@ -34,9 +34,9 @@ const FormSchema = new mongoose.Schema({
     tenure: {
         type: String
     },
-    businessType: {
-        type: String
-    }
+    // businessType: {
+    //     type: String
+    // }
 })
 
 const Form = mongoose.model('Form', FormSchema)

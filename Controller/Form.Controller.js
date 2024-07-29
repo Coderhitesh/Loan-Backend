@@ -14,10 +14,10 @@ exports.CreateForm = async (req, res) => {
             coverType,
             sumInsured,
             tenure,
-            businessType
+            // businessType
         } = req.body;
 
-        if (!fullName || !email || !phone || !address || !zipCode || !insuranceType || !additionalInfo || !planType || !coverType || !sumInsured || !tenure || !businessType) {
+        if (!fullName || !email || !phone || !address || !zipCode || !insuranceType || !additionalInfo || !planType || !coverType || !sumInsured || !tenure) {
             return res.status(400).json({
                 success: false,
                 message: 'Please fill all fields'
@@ -35,8 +35,7 @@ exports.CreateForm = async (req, res) => {
             planType,
             coverType,
             sumInsured,
-            tenure,
-            businessType
+            tenure
         });
 
         // console.log(newForm);
